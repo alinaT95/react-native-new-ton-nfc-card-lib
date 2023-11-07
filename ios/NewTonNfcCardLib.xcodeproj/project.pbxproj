@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B0720DF255D46AD00C58ED5 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0720DE255D46AD00C58ED5 /* JsonHelper.swift */; };
+		5B0E097624FFA24E0068B6D7 /* libswiftCoreNFC.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0E097524FFA24E0068B6D7 /* libswiftCoreNFC.tbd */; };
+		5B4D48B12509499900122A44 /* RecoveryDataApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D48B02509499900122A44 /* RecoveryDataApi.swift */; };
+		5B610F86255D4B3A002B09C8 /* ResponsesConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B610F85255D4B3A002B09C8 /* ResponsesConstants.swift */; };
+		5B7804FB2577F36E00F4BB25 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7804FA2577F36E00F4BB25 /* Constants.swift */; };
+		5B8936F62500171700843C5F /* ByteArrayAndHexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8936F52500171700843C5F /* ByteArrayAndHexHelper.swift */; };
+		5B8936F825001EB200843C5F /* TonWalletAppletConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8936F725001EB200843C5F /* TonWalletAppletConstants.swift */; };
+		5B8936FA25001FAB00843C5F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8936F925001FAB00843C5F /* Data.swift */; };
+		5B8936FE250021FE00843C5F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8936FD250021FE00843C5F /* String.swift */; };
+		5B8937002500229E00843C5F /* CardErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8936FF2500229E00843C5F /* CardErrorCodes.swift */; };
+		5B8937022500235100843C5F /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8937012500235100843C5F /* Array.swift */; };
+		5B89370C25003C3100843C5F /* CoinManagerApduCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89370B25003C3100843C5F /* CoinManagerApduCommands.swift */; };
+		5B89370E25003C9900843C5F /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89370D25003C9900843C5F /* ErrorHelper.swift */; };
+		5B89371025003D9800843C5F /* ApduRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89370F25003D9800843C5F /* ApduRunner.swift */; };
+		5B89371225003FDE00843C5F /* CryptoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89371125003FDE00843C5F /* CryptoHelper.swift */; };
+		5B8937142500409F00843C5F /* TonWalletAppletApduCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8937132500409F00843C5F /* TonWalletAppletApduCommands.swift */; };
+		5B8937162500413000843C5F /* TonNfcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8937152500413000843C5F /* TonNfcApi.swift */; };
+		5B893718250042EC00843C5F /* CardActivationNfcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B893717250042EC00843C5F /* CardActivationNfcApi.swift */; };
+		5B89371A2500431500843C5F /* CardCoinManagerNfcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8937192500431500843C5F /* CardCoinManagerNfcApi.swift */; };
+		5B89371C2500434E00843C5F /* CardCryptoNfcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89371B2500434E00843C5F /* CardCryptoNfcApi.swift */; };
+		5B89371E2500438A00843C5F /* CardKeyChainNfcApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89371D2500438A00843C5F /* CardKeyChainNfcApi.swift */; };
+		5B8937202500451600843C5F /* NfcCardModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89371F2500451600843C5F /* NfcCardModule.swift */; };
+		5B8937222500455C00843C5F /* NfcCardModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8937212500455C00843C5F /* NfcCardModule.m */; };
+		5B8B399F2542C32200255BB7 /* ToastHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8B399E2542C32200255BB7 /* ToastHelper.swift */; };
+		5BB252A3258278C30038BF92 /* RNCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB252A2258278C30038BF92 /* RNCallback.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58B511D91A9E6C8500147676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		134814201AA4EA6300B7C361 /* libNewTonNfcCardLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNewTonNfcCardLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0720DE255D46AD00C58ED5 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		5B0E097524FFA24E0068B6D7 /* libswiftCoreNFC.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreNFC.tbd; path = usr/lib/swift/libswiftCoreNFC.tbd; sourceTree = SDKROOT; };
+		5B4D48B02509499900122A44 /* RecoveryDataApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryDataApi.swift; sourceTree = "<group>"; };
+		5B610F85255D4B3A002B09C8 /* ResponsesConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsesConstants.swift; sourceTree = "<group>"; };
+		5B7804FA2577F36E00F4BB25 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5B8936F52500171700843C5F /* ByteArrayAndHexHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteArrayAndHexHelper.swift; sourceTree = "<group>"; };
+		5B8936F725001EB200843C5F /* TonWalletAppletConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonWalletAppletConstants.swift; sourceTree = "<group>"; };
+		5B8936F925001FAB00843C5F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5B8936FD250021FE00843C5F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		5B8936FF2500229E00843C5F /* CardErrorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardErrorCodes.swift; sourceTree = "<group>"; };
+		5B8937012500235100843C5F /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		5B89370B25003C3100843C5F /* CoinManagerApduCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManagerApduCommands.swift; sourceTree = "<group>"; };
+		5B89370D25003C9900843C5F /* ErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
+		5B89370F25003D9800843C5F /* ApduRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApduRunner.swift; sourceTree = "<group>"; };
+		5B89371125003FDE00843C5F /* CryptoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHelper.swift; sourceTree = "<group>"; };
+		5B8937132500409F00843C5F /* TonWalletAppletApduCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonWalletAppletApduCommands.swift; sourceTree = "<group>"; };
+		5B8937152500413000843C5F /* TonNfcApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonNfcApi.swift; sourceTree = "<group>"; };
+		5B893717250042EC00843C5F /* CardActivationNfcApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardActivationNfcApi.swift; sourceTree = "<group>"; };
+		5B8937192500431500843C5F /* CardCoinManagerNfcApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCoinManagerNfcApi.swift; sourceTree = "<group>"; };
+		5B89371B2500434E00843C5F /* CardCryptoNfcApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCryptoNfcApi.swift; sourceTree = "<group>"; };
+		5B89371D2500438A00843C5F /* CardKeyChainNfcApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardKeyChainNfcApi.swift; sourceTree = "<group>"; };
+		5B89371F2500451600843C5F /* NfcCardModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcCardModule.swift; sourceTree = "<group>"; };
+		5B8937212500455C00843C5F /* NfcCardModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NfcCardModule.m; sourceTree = "<group>"; };
+		5B8B399E2542C32200255BB7 /* ToastHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastHelper.swift; sourceTree = "<group>"; };
+		5BB252A2258278C30038BF92 /* RNCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNCallback.swift; sourceTree = "<group>"; };
+		F4FF95D5245B92E700C19C63 /* NewTonNfcCardLib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewTonNfcCardLib-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0E097624FFA24E0068B6D7 /* libswiftCoreNFC.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134814211AA4EA7D00B7C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134814201AA4EA6300B7C361 /* libNewTonNfcCardLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58B511D21A9E6C8500147676 = {
+			isa = PBXGroup;
+			children = (
+				5B511D51257F9F4B006A2CCE /* utils */,
+				5B511D4C257F9CFE006A2CCE /* api */,
+				5B511D4A257F9C00006A2CCE /* smartCard */,
+				5B511D4B257F9CAF006A2CCE /* extensions */,
+				5B0E097424FFA24D0068B6D7 /* Frameworks */,
+				F4FF95D5245B92E700C19C63 /* NewTonNfcCardLib-Bridging-Header.h */,
+				5B8937212500455C00843C5F /* NfcCardModule.m */,
+				5B89371F2500451600843C5F /* NfcCardModule.swift */,
+				5BB252A2258278C30038BF92 /* RNCallback.swift */,
+				134814211AA4EA7D00B7C361 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B0E097424FFA24D0068B6D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B0E097524FFA24E0068B6D7 /* libswiftCoreNFC.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B511D4A257F9C00006A2CCE /* smartCard */ = {
+			isa = PBXGroup;
+			children = (
+				5B511D4F257F9EB7006A2CCE /* cryptoUtils */,
+				5B7804FA2577F36E00F4BB25 /* Constants.swift */,
+				5B89370B25003C3100843C5F /* CoinManagerApduCommands.swift */,
+				5B8936FF2500229E00843C5F /* CardErrorCodes.swift */,
+				5B8936F725001EB200843C5F /* TonWalletAppletConstants.swift */,
+				5B8937132500409F00843C5F /* TonWalletAppletApduCommands.swift */,
+			);
+			path = smartCard;
+			sourceTree = "<group>";
+		};
+		5B511D4B257F9CAF006A2CCE /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B8936F925001FAB00843C5F /* Data.swift */,
+				5B8936FD250021FE00843C5F /* String.swift */,
+				5B8937012500235100843C5F /* Array.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		5B511D4C257F9CFE006A2CCE /* api */ = {
+			isa = PBXGroup;
+			children = (
+				5B511D50257F9EE0006A2CCE /* utils */,
+				5B511D4D257F9E2A006A2CCE /* nfc */,
+				5B8937192500431500843C5F /* CardCoinManagerNfcApi.swift */,
+				5B893717250042EC00843C5F /* CardActivationNfcApi.swift */,
+				5B4D48B02509499900122A44 /* RecoveryDataApi.swift */,
+				5B89371B2500434E00843C5F /* CardCryptoNfcApi.swift */,
+				5B89371D2500438A00843C5F /* CardKeyChainNfcApi.swift */,
+				5B8937152500413000843C5F /* TonNfcApi.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		5B511D4D257F9E2A006A2CCE /* nfc */ = {
+			isa = PBXGroup;
+			children = (
+				5B89370F25003D9800843C5F /* ApduRunner.swift */,
+			);
+			path = nfc;
+			sourceTree = "<group>";
+		};
+		5B511D4F257F9EB7006A2CCE /* cryptoUtils */ = {
+			isa = PBXGroup;
+			children = (
+				5B89371125003FDE00843C5F /* CryptoHelper.swift */,
+			);
+			path = cryptoUtils;
+			sourceTree = "<group>";
+		};
+		5B511D50257F9EE0006A2CCE /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B610F85255D4B3A002B09C8 /* ResponsesConstants.swift */,
+				5B8936F52500171700843C5F /* ByteArrayAndHexHelper.swift */,
+				5B89370D25003C9900843C5F /* ErrorHelper.swift */,
+				5B0720DE255D46AD00C58ED5 /* JsonHelper.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		5B511D51257F9F4B006A2CCE /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B8B399E2542C32200255BB7 /* ToastHelper.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58B511DA1A9E6C8500147676 /* NewTonNfcCardLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "NewTonNfcCardLib" */;
+			buildPhases = (
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+				58B511D91A9E6C8500147676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewTonNfcCardLib;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libNewTonNfcCardLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B511D31A9E6C8500147676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "NewTonNfcCardLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B511DA1A9E6C8500147676 /* NewTonNfcCardLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B511D71A9E6C8500147676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB252A3258278C30038BF92 /* RNCallback.swift in Sources */,
+				5B8937142500409F00843C5F /* TonWalletAppletApduCommands.swift in Sources */,
+				5B8937162500413000843C5F /* TonNfcApi.swift in Sources */,
+				5B89370C25003C3100843C5F /* CoinManagerApduCommands.swift in Sources */,
+				5B0720DF255D46AD00C58ED5 /* JsonHelper.swift in Sources */,
+				5B89371225003FDE00843C5F /* CryptoHelper.swift in Sources */,
+				5B89371025003D9800843C5F /* ApduRunner.swift in Sources */,
+				5B7804FB2577F36E00F4BB25 /* Constants.swift in Sources */,
+				5B8937222500455C00843C5F /* NfcCardModule.m in Sources */,
+				5B89371A2500431500843C5F /* CardCoinManagerNfcApi.swift in Sources */,
+				5B610F86255D4B3A002B09C8 /* ResponsesConstants.swift in Sources */,
+				5B8B399F2542C32200255BB7 /* ToastHelper.swift in Sources */,
+				5B89370E25003C9900843C5F /* ErrorHelper.swift in Sources */,
+				5B8937202500451600843C5F /* NfcCardModule.swift in Sources */,
+				5B8936F825001EB200843C5F /* TonWalletAppletConstants.swift in Sources */,
+				5B89371E2500438A00843C5F /* CardKeyChainNfcApi.swift in Sources */,
+				5B893718250042EC00843C5F /* CardActivationNfcApi.swift in Sources */,
+				5B8937022500235100843C5F /* Array.swift in Sources */,
+				5B8936FE250021FE00843C5F /* String.swift in Sources */,
+				5B4D48B12509499900122A44 /* RecoveryDataApi.swift in Sources */,
+				5B8937002500229E00843C5F /* CardErrorCodes.swift in Sources */,
+				5B89371C2500434E00843C5F /* CardCryptoNfcApi.swift in Sources */,
+				5B8936F62500171700843C5F /* ByteArrayAndHexHelper.swift in Sources */,
+				5B8936FA25001FAB00843C5F /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58B511ED1A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58B511EE1A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58B511F01A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = NewTonNfcCardLib;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NewTonNfcCardLib-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = NewTonNfcCardLib;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NewTonNfcCardLib-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "NewTonNfcCardLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "NewTonNfcCardLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+}
